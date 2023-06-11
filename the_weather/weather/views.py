@@ -12,7 +12,7 @@ def index(request):
 
     form = CityForm()
 
-    cities = City.objects.all()
+    cities = City.objects.all().order_by('-id')
 
     weather_data = []
 
